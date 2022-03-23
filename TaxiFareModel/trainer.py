@@ -14,7 +14,7 @@ class Trainer():
             X: pandas DataFrame
             y: pandas Series
         """
-        self.pipeline = None
+        self.pipe = None
         self.X = X
         self.y = y
 
@@ -39,6 +39,7 @@ class Trainer():
 
     def run(self):
         """set and train the pipeline"""
+        self.set_pipeline()
         self.pipe.fit(self.X, self.y)
         return self.pipe
 
@@ -58,6 +59,5 @@ if __name__ == "__main__":
     X = df.drop("fare_amount", axis=1)
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.15)
     pipeline = Trainer(X_train, y_train)
-    pipeline.set_pipeline()
     pipeline.run()
     pipeline.evaluate(X_val, y_val)
