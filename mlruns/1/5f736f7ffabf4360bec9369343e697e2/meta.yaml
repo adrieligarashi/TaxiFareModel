@@ -1,0 +1,15 @@
+artifact_uri: file:///home/aysi/code/adrieligarashi/TaxiFareModel/mlruns/1/5f736f7ffabf4360bec9369343e697e2/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 5f736f7ffabf4360bec9369343e697e2
+run_uuid: 5f736f7ffabf4360bec9369343e697e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1648056797002
+status: 1
+tags: []
+user_id: unknown
